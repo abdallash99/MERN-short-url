@@ -1,4 +1,4 @@
 {
   "mongoUrl": "mongodb+srv://admin:admin@cluster0-kanfo.mongodb.net/short?retryWrites=true&w=majority",
-  "baseUrl": "https://shielded-bastion-06656.herokuapp.com/"
+  "baseUrl": "http://8ser.tech/"
 }
