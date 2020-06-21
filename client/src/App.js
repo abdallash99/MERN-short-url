@@ -33,7 +33,7 @@ function App() {
               <div className="col-sm-8 offset-sm-2">
                 <form onSubmit={submit}>
                   <input type="text" className='form-control my-4' value={url} onChange={(e) => { setUrl(e.target.value) }} />
-                  <input type="submit" value="Shorten" className='btn btn-block btn-primary' />
+                  <input type="submit" value="Shorten" className='btn btn-block btn-secondary' />
                 </form>
                 {
                   <div className="my-4">
