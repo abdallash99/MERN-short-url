@@ -1,21 +1,9 @@
 #showcase {
   color: #fff;
-  background: #333;
+
   padding: 2rem;
   position: relative;
   height: 100vh;
-}
-
-#showcase:before {
-  content: '';
-  background: url('./person-using-laptop-computer-during-daytime-196655.jpg')
-    no-repeat center center/cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
 }
 
 #showcase .showcase-container {
@@ -30,4 +18,14 @@
 
 #showcase .showcase-content p {
   margin-bottom: 1rem;
+}
+
+@media (max-width: 565px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+}
+
+body {
+  background: #0062cc;
 }
