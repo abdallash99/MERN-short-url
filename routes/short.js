@@ -13,12 +13,11 @@ router.post('/short', async (req, res) => {
 
         const longUrl = req.body.url;
 
-        if (!valid.isUri(longUrl)) {
-            return res.status(400).json({ msg: 'Please send valid URL' })
+        if (!valid.isWebUri(longUrl)) {
+            return res.status(400).json({ msg: 'Please fill valid URL' })
         }
         const oldUrl = await URL.findOne({ longUrl });
         if (oldUrl) {
-            console.log(oldUrl.shortUrl)
             return res.status(200).json({ shortUrl: oldUrl.shortUrl })
         }
         const urlCode = shortid.generate()
