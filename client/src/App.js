@@ -38,7 +38,7 @@ function App() {
               <div className="row">
                 <div className="col-sm-8 offset-sm-2">
                   <form onSubmit={submit}>
-                    <input type="text" className='form-control my-4' value={url} onChange={(e) => { setUrl(e.target.value) }} />
+                    <input type="text" required={true} className='form-control my-4' value={url} onChange={(e) => { setUrl(e.target.value) }} />
                     <input type="submit" value="Shorten" className='btn btn-block btn-secondary' />
                   </form>
                   {
@@ -54,7 +54,7 @@ function App() {
                     </div>
                     <div className="my-4">
                       {
-                        shortUrl && !loading ? <QRCode value={shortUrl} size={256} /> : null
+                        shortUrl && !loading ? <QRCode className='rsp' value={shortUrl} size={256} /> : null
                       }
                     </div>
                   </div>
