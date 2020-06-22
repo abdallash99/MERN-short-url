@@ -1,4 +1,4 @@
 {
-  "mongoUrl": "mongodb+srv://admin:admin@cluster0-kanfo.mongodb.net/short?retryWrites=true&w=majority",
+  "mongoUrl": "your url",
   "baseUrl": "http://localhost:5000/"
 }
